@@ -34,6 +34,7 @@ struct DailyWeatherView: View {
                 .frame(width: 150)
             Spacer()
             cityVM.getWeatherIconFor(icon: weather.weather.count > 0 ? weather.weather[0].icon : "sun.max.fill")
+        }
                 .foregroundColor(.white)
                 .padding(.horizontal, 40)
                 .padding(.vertical, 15)
@@ -42,7 +43,6 @@ struct DailyWeatherView: View {
                 .shadow(color: Color.black.opacity(0.2), radius: 2, x: 2, y: 2)
             }
         }
-    }
 
 
 //MARK: - PREVIEW
